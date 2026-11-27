@@ -25,6 +25,16 @@ All four results are unconditional. Positivity itself follows from the
 shifted-prime estimates of Steve Fan and Paul Pollack and remains a separate
 formalization step. [Fan–Pollack, Theorem 1.1](https://arxiv.org/abs/2510.14167)
 
+## Sharp upper bound
+
+[`SharpUpper.lean`](SharpUpper.lean) imports the arithmetic identity and proves
+`Erdos820Identity.limsup_HExponent_le_log_two`, namely
+$\limsup_{n\to\infty}\log\log H(n)/F(n)\le\log 2$. For every $\varepsilon>0$,
+`log_divisors_eventually_sharp` gives the eventual bound
+$\log\tau(n)\le(\log 2+\varepsilon)F(n)$ by splitting the prime divisors at
+$\lceil(\log n)^a\rceil$ with $0<a<1$. The injection $p\mapsto p-1$ gives
+$W(n)\le\tau(n)$, and `arithmetic_identity` transfers the bound to $H$.
+
 ## Sources and credits
 
 - Paul Erdős stated the common-exponent question and gave the shifted-prime
@@ -57,7 +67,8 @@ Then run the verifier with Python 3 and Lake on your path.
 python verify.py /path/to/formal-conjectures
 ```
 
-The verifier compiles with warnings treated as errors, saves build artifacts
-in a temporary directory, and checks that each of the four results uses
-exactly `propext`, `Classical.choice`, and `Quot.sound`. It then replays
-the module with `leanchecker`.
+The verifier prints each Lean source's SHA-256 digest, compiles both modules
+with warnings treated as errors, and saves build artifacts in a temporary
+directory. It checks that the four identity results and the two upper-bound
+results each use exactly `propext`, `Classical.choice`, and `Quot.sound`.
+It then replays both modules with `leanchecker`.

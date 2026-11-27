@@ -1,6 +1,7 @@
-"""Compile and replay the portable Erdős 820 proof in the pinned Lake workspace."""
+"""Compile and replay both portable Erdős 820 modules in the pinned Lake workspace."""
 
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -10,16 +11,21 @@ import sys
 import tempfile
 
 
-MODULE = "Erdos820ArithmeticIdentity"
 FORMAL_CONJECTURES = "9097e2f90e66d2f6244209cb1c07f7120d17ec53"
 MATHLIB = "0df444a360eaa60ab8c11dca51a86af692955474"
 TOOLCHAIN = "leanprover/lean4:v4.33.1"
-THEOREMS = (
-    "pointwise_bound",
-    "arithmetic_identity",
-    "common_exponent_iff",
-    "site_iff_positive",
-)
+MODULES = {
+    "Erdos820ArithmeticIdentity": (
+        "pointwise_bound",
+        "arithmetic_identity",
+        "common_exponent_iff",
+        "site_iff_positive",
+    ),
+    "SharpUpper": (
+        "log_divisors_eventually_sharp",
+        "limsup_HExponent_le_log_two",
+    ),
+}
 AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 
 
@@ -51,6 +57,7 @@ def verify(project, lake):
         ["git", "rev-parse", "HEAD"], mathlib_dir, env
     ) != MATHLIB:
         raise ValueError(f"Expected Mathlib at {MATHLIB}")
+    print(f"Formal Conjectures {FORMAL_CONJECTURES}\nMathlib {MATHLIB}", flush=True)
 
     lean = [lake, "env", "lean"]
     version = capture([*lean, "--version"], project, env)
@@ -58,26 +65,31 @@ def verify(project, lake):
         raise ValueError(f"Expected Lean 4.33.1, found {version}")
     print(version, flush=True)
 
-    source = Path(__file__).resolve().with_name(f"{MODULE}.lean")
+    sources = Path(__file__).resolve().parent
     with tempfile.TemporaryDirectory(prefix="erdos820-") as temp:
-        olean = Path(temp) / f"{MODULE}.olean"
-        output = capture(
-            [*lean, "-j", "2", "-DwarningAsError=true", "-R", str(source.parent),
-             "-o", str(olean), str(source)],
-            project,
-            env,
-        )
-        print(output, flush=True)
-        reports = re.findall(r"^'([^']+)' depends on axioms: \[([^\]\n]*)\]$", output, re.M)
-        actual = {name: set(axioms.split(", ")) for name, axioms in reports}
-        expected = {f"Erdos820Identity.{name}": AXIOMS for name in THEOREMS}
-        if len(reports) != len(expected) or actual != expected:
-            raise ValueError("The four audited theorems must each use exactly the three standard axioms")
-
         env["LEAN_PATH"] = temp
-        subprocess.run([lake, "env", "leanchecker", "--verbose", MODULE],
-                       cwd=project, env=env, check=True)
-        print(f"Kernel replay and axiom checks passed for {MODULE}.")
+        for module, theorems in MODULES.items():
+            source = sources / f"{module}.lean"
+            olean = Path(temp) / f"{module}.olean"
+            digest = hashlib.sha256(source.read_bytes()).hexdigest()
+            print(f"Compiling {source.name} with warnings as errors (SHA-256 {digest})", flush=True)
+            output = capture(
+                [*lean, "-j", "2", "-DwarningAsError=true", "-R", str(sources),
+                 "-o", str(olean), str(source)],
+                project,
+                env,
+            )
+            print(output, flush=True)
+            reports = re.findall(r"^'([^']+)' depends on axioms: \[([^\]\n]*)\]$", output, re.M)
+            actual = {name: set(axioms.split(", ")) for name, axioms in reports}
+            expected = {f"Erdos820Identity.{name}": AXIOMS for name in theorems}
+            if len(reports) != len(expected) or actual != expected:
+                raise ValueError(f"The audited theorems in {module} must use exactly the three standard axioms")
+
+        for module in MODULES:
+            subprocess.run([lake, "env", "leanchecker", "--verbose", module],
+                           cwd=project, env=env, check=True)
+            print(f"Kernel replay and axiom checks passed for {module}.", flush=True)
 
 
 def main():
