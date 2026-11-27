@@ -21,7 +21,7 @@ git clone https://github.com/google-deepmind/formal-conjectures.git
 git -C formal-conjectures checkout 9097e2f90e66d2f6244209cb1c07f7120d17ec53
 cd formal-conjectures
 lake exe cache get
-lake build +FormalConjectures.ErdosProblems.490
+lake build FormalConjectures/ErdosProblems/490.lean:olean
 cd ..
 python replay.py formal-conjectures --jobs 2
 ~~~
