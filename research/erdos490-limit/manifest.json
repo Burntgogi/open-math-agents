@@ -1,0 +1,1042 @@
+{
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "formal_conjectures": "9097e2f90e66d2f6244209cb1c07f7120d17ec53",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "PrimeNumberTheoremAnd": "3853b4ba456ebf0d441e46c68df49231b5ec0d8a",
+  "LeanArchitect": "0f5bc0209ae02a7fb0cfe7d113d4094542cee221",
+  "modules": {
+    "AbelCells": {
+      "deps": [
+        "PrimeNumberTheoremAnd.IEANTN.Mertens"
+      ],
+      "group": "local"
+    },
+    "Architect": {
+      "deps": [
+        "Architect.Attribute",
+        "Architect.Basic",
+        "Architect.CollectUsed",
+        "Architect.Command",
+        "Architect.Content",
+        "Architect.Load",
+        "Architect.Output",
+        "Architect.Tactic"
+      ],
+      "group": "vendor"
+    },
+    "Architect.Attribute": {
+      "deps": [
+        "Architect.Content"
+      ],
+      "group": "vendor"
+    },
+    "Architect.Basic": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "Architect.CollectUsed": {
+      "deps": [
+        "Architect.Basic"
+      ],
+      "group": "vendor"
+    },
+    "Architect.Command": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "Architect.Content": {
+      "deps": [
+        "Architect.Basic",
+        "Architect.Command"
+      ],
+      "group": "vendor"
+    },
+    "Architect.Load": {
+      "deps": [
+        "Architect.Output"
+      ],
+      "group": "vendor"
+    },
+    "Architect.Output": {
+      "deps": [
+        "Architect.CollectUsed",
+        "Architect.Content",
+        "Architect.Tactic"
+      ],
+      "group": "vendor"
+    },
+    "Architect.Tactic": {
+      "deps": [
+        "Architect.Basic"
+      ],
+      "group": "vendor"
+    },
+    "Arithmetic": {
+      "deps": [],
+      "group": "local"
+    },
+    "ArithmeticSimplex": {
+      "deps": [
+        "AtomicProduct",
+        "Enumerate",
+        "Simplices"
+      ],
+      "group": "local"
+    },
+    "Assembly": {
+      "deps": [
+        "Components"
+      ],
+      "group": "local"
+    },
+    "AtomicProduct": {
+      "deps": [
+        "LabelSum"
+      ],
+      "group": "local"
+    },
+    "BlueBins": {
+      "deps": [
+        "BlueRecovery",
+        "OldStableMass"
+      ],
+      "group": "local"
+    },
+    "BlueKernel": {
+      "deps": [
+        "CompactCDF",
+        "KernelLimit"
+      ],
+      "group": "local"
+    },
+    "BlueMoving": {
+      "deps": [
+        "BlueKernel",
+        "KernelRange",
+        "Transfer"
+      ],
+      "group": "local"
+    },
+    "BlueProducts": {
+      "deps": [
+        "StableTransfer",
+        "TransplantColors"
+      ],
+      "group": "local"
+    },
+    "BlueRecovery": {
+      "deps": [
+        "BlueMoving",
+        "BlueProducts"
+      ],
+      "group": "local"
+    },
+    "BlueScale": {
+      "deps": [
+        "BlueKernel",
+        "BlueStrips",
+        "Cells",
+        "Cutoff",
+        "KernelRange",
+        "LargeLabelTransfer"
+      ],
+      "group": "local"
+    },
+    "BlueStable": {
+      "deps": [
+        "BlueBins",
+        "BlueScale"
+      ],
+      "group": "local"
+    },
+    "BlueStrips": {
+      "deps": [
+        "CompactCDF",
+        "KernelLimit"
+      ],
+      "group": "local"
+    },
+    "Bounds": {
+      "deps": [
+        "Arithmetic"
+      ],
+      "group": "local"
+    },
+    "BumpKernel": {
+      "deps": [
+        "Assembly"
+      ],
+      "group": "local"
+    },
+    "CDFLimit": {
+      "deps": [
+        "AtomicProduct",
+        "Simplices"
+      ],
+      "group": "local"
+    },
+    "CellLaw": {
+      "deps": [
+        "Fluctuations",
+        "Selection"
+      ],
+      "group": "local"
+    },
+    "CellSpectrum": {
+      "deps": [
+        "Selection"
+      ],
+      "group": "local"
+    },
+    "CellTuple": {
+      "deps": [
+        "PrimeCells",
+        "WordLaw"
+      ],
+      "group": "local"
+    },
+    "Cells": {
+      "deps": [],
+      "group": "local"
+    },
+    "Cofactor": {
+      "deps": [],
+      "group": "local"
+    },
+    "CompactCDF": {
+      "deps": [
+        "Bounds",
+        "SegmentMass",
+        "SmoothTail"
+      ],
+      "group": "local"
+    },
+    "Components": {
+      "deps": [
+        "ProductLaw"
+      ],
+      "group": "local"
+    },
+    "CountedWords": {
+      "deps": [
+        "RedArithmetic"
+      ],
+      "group": "local"
+    },
+    "Counting": {
+      "deps": [
+        "PrimeCells"
+      ],
+      "group": "local"
+    },
+    "Cutoff": {
+      "deps": [
+        "PrimeNumberTheoremAnd.IEANTN.Mertens"
+      ],
+      "group": "local"
+    },
+    "Dilation": {
+      "deps": [
+        "Reciprocal"
+      ],
+      "group": "local"
+    },
+    "DisplacementTail": {
+      "deps": [],
+      "group": "local"
+    },
+    "Enumerate": {
+      "deps": [],
+      "group": "local"
+    },
+    "Envelope": {
+      "deps": [
+        "LastLabel"
+      ],
+      "group": "local"
+    },
+    "Erdos490Limit": {
+      "deps": [
+        "FinalTransfer",
+        "H1",
+        "H3",
+        "RedRealization"
+      ],
+      "group": "local"
+    },
+    "EulerScale": {
+      "deps": [
+        "MertensBounds",
+        "PrimeColorTransfer"
+      ],
+      "group": "local"
+    },
+    "EulerTransfer": {
+      "deps": [
+        "EulerScale",
+        "FiniteOptimum"
+      ],
+      "group": "local"
+    },
+    "FamilyAtoms": {
+      "deps": [
+        "AtomicProduct"
+      ],
+      "group": "local"
+    },
+    "FinalTransfer": {
+      "deps": [
+        "BlueStable",
+        "RedGood"
+      ],
+      "group": "local"
+    },
+    "FiniteOptimum": {
+      "deps": [
+        "H2"
+      ],
+      "group": "local"
+    },
+    "Fluctuations": {
+      "deps": [],
+      "group": "local"
+    },
+    "Fourier": {
+      "deps": [],
+      "group": "local"
+    },
+    "GradeSum": {
+      "deps": [
+        "UniformError",
+        "Weighted"
+      ],
+      "group": "local"
+    },
+    "Grid": {
+      "deps": [
+        "Assembly",
+        "Fourier"
+      ],
+      "group": "local"
+    },
+    "H1": {
+      "deps": [],
+      "group": "local"
+    },
+    "H2": {
+      "deps": [
+        "Matching",
+        "OMAReductions.R_Erdos490_erdos_490_variants_limit_R1"
+      ],
+      "group": "local"
+    },
+    "H3": {
+      "deps": [],
+      "group": "local"
+    },
+    "Harmonic": {
+      "deps": [
+        "Cofactor"
+      ],
+      "group": "local"
+    },
+    "KernelEstimate": {
+      "deps": [
+        "Grid",
+        "PrimeInput",
+        "Shift"
+      ],
+      "group": "local"
+    },
+    "KernelLimit": {
+      "deps": [
+        "ArithmeticSimplex",
+        "CDFLimit",
+        "GradeSum",
+        "UniformLimit"
+      ],
+      "group": "local"
+    },
+    "KernelRange": {
+      "deps": [
+        "CompactCDF",
+        "KernelLimit"
+      ],
+      "group": "local"
+    },
+    "LabelDensity": {
+      "deps": [
+        "MovingLabel"
+      ],
+      "group": "local"
+    },
+    "LabelEmbedding": {
+      "deps": [
+        "Cofactor"
+      ],
+      "group": "local"
+    },
+    "LabelSum": {
+      "deps": [
+        "Measures"
+      ],
+      "group": "local"
+    },
+    "LargeLabelTransfer": {
+      "deps": [
+        "StrippedProfiles",
+        "TransferEndpoint"
+      ],
+      "group": "local"
+    },
+    "LastLabel": {
+      "deps": [
+        "Counting",
+        "Weighted"
+      ],
+      "group": "local"
+    },
+    "Law": {
+      "deps": [
+        "Arithmetic"
+      ],
+      "group": "local"
+    },
+    "LogWindow": {
+      "deps": [
+        "PrimeCells"
+      ],
+      "group": "local"
+    },
+    "Matching": {
+      "deps": [
+        "Weights"
+      ],
+      "group": "local"
+    },
+    "Measures": {
+      "deps": [
+        "Weak"
+      ],
+      "group": "local"
+    },
+    "MertensBounds": {
+      "deps": [
+        "PrimeNumberTheoremAnd.IEANTN.Mertens"
+      ],
+      "group": "local"
+    },
+    "MovingLabel": {
+      "deps": [
+        "Envelope",
+        "LabelSum",
+        "LastLabel"
+      ],
+      "group": "local"
+    },
+    "OMAReductions.R_Erdos490_erdos_490_variants_limit_R1": {
+      "deps": [],
+      "group": "local"
+    },
+    "OldBadEstimate": {
+      "deps": [
+        "Dilation",
+        "DisplacementTail",
+        "OldBadMass"
+      ],
+      "group": "local"
+    },
+    "OldBadMass": {
+      "deps": [
+        "EulerScale",
+        "OldWindow"
+      ],
+      "group": "local"
+    },
+    "OldSparseMass": {
+      "deps": [
+        "OldStableMass"
+      ],
+      "group": "local"
+    },
+    "OldStableMass": {
+      "deps": [
+        "LargeLabelTransfer",
+        "OldBadEstimate",
+        "PrimeCells"
+      ],
+      "group": "local"
+    },
+    "OldStrip": {
+      "deps": [
+        "SieveError",
+        "StableTransfer"
+      ],
+      "group": "local"
+    },
+    "OldSupport": {
+      "deps": [
+        "CellTuple",
+        "WordLaw"
+      ],
+      "group": "local"
+    },
+    "OldTransport": {
+      "deps": [
+        "LabelSum",
+        "OldBadMass",
+        "PrimeCells",
+        "PrimeLabelMass"
+      ],
+      "group": "local"
+    },
+    "OldWindow": {
+      "deps": [
+        "OldStrip",
+        "SmoothMass"
+      ],
+      "group": "local"
+    },
+    "Plancherel": {
+      "deps": [
+        "BumpKernel",
+        "Grid"
+      ],
+      "group": "local"
+    },
+    "PrimeCells": {
+      "deps": [
+        "Cells",
+        "PrimeNumberTheoremAnd.StrongPNT",
+        "Reciprocal",
+        "ThetaInput"
+      ],
+      "group": "local"
+    },
+    "PrimeColorTransfer": {
+      "deps": [
+        "H2",
+        "Harmonic"
+      ],
+      "group": "local"
+    },
+    "PrimeInput": {
+      "deps": [
+        "CellSpectrum",
+        "LogWindow"
+      ],
+      "group": "local"
+    },
+    "PrimeLabelMass": {
+      "deps": [
+        "Cells",
+        "Dilation",
+        "H2",
+        "LabelEmbedding"
+      ],
+      "group": "local"
+    },
+    "PrimeNumberTheoremAnd.Auxiliary": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.EulerMaclaurin": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.Fourier": {
+      "deps": [
+        "PrimeNumberTheoremAnd.Sobolev"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.IEANTN.Mertens": {
+      "deps": [
+        "Architect",
+        "PrimeNumberTheoremAnd.EulerMaclaurin"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.MediumPNT": {
+      "deps": [
+        "Architect",
+        "PrimeNumberTheoremAnd.MellinCalculus",
+        "PrimeNumberTheoremAnd.SmoothExistence",
+        "PrimeNumberTheoremAnd.ZetaBounds",
+        "PrimeNumberTheoremAnd.ZetaConj"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.MellinCalculus": {
+      "deps": [
+        "Architect",
+        "PrimeNumberTheoremAnd.Auxiliary"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.Rectangle": {
+      "deps": [
+        "Architect"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.ResidueCalcOnRectangles": {
+      "deps": [
+        "Architect",
+        "PrimeNumberTheoremAnd.Rectangle",
+        "PrimeNumberTheoremAnd.Tactic.AdditiveCombination"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.SmoothExistence": {
+      "deps": [
+        "Architect",
+        "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.Sobolev": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.StrongPNT": {
+      "deps": [
+        "Architect",
+        "PrimeNumberTheoremAnd.MediumPNT"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.Tactic.AdditiveCombination": {
+      "deps": [],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.ZetaBounds": {
+      "deps": [
+        "Architect",
+        "PrimeNumberTheoremAnd.Auxiliary",
+        "PrimeNumberTheoremAnd.EulerMaclaurin",
+        "PrimeNumberTheoremAnd.Fourier",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "PrimeNumberTheoremAnd.ResidueCalcOnRectangles"
+      ],
+      "group": "vendor"
+    },
+    "PrimeNumberTheoremAnd.ZetaConj": {
+      "deps": [
+        "Architect"
+      ],
+      "group": "vendor"
+    },
+    "ProductLaw": {
+      "deps": [
+        "CellLaw"
+      ],
+      "group": "local"
+    },
+    "Rankin": {
+      "deps": [
+        "Arithmetic",
+        "PrimeNumberTheoremAnd.IEANTN.Mertens"
+      ],
+      "group": "local"
+    },
+    "Reciprocal": {
+      "deps": [
+        "Remainder"
+      ],
+      "group": "local"
+    },
+    "RedArithmetic": {
+      "deps": [
+        "CellTuple",
+        "LabelDensity",
+        "MovingLabel",
+        "WordIntegral"
+      ],
+      "group": "local"
+    },
+    "RedGood": {
+      "deps": [
+        "LargeLabelTransfer",
+        "OldSparseMass",
+        "TransplantColors"
+      ],
+      "group": "local"
+    },
+    "RedOldWindow": {
+      "deps": [
+        "BlueBins",
+        "OldTransport",
+        "RedWindow"
+      ],
+      "group": "local"
+    },
+    "RedProducts": {
+      "deps": [
+        "BlueProducts",
+        "CountedWords"
+      ],
+      "group": "local"
+    },
+    "RedRealization": {
+      "deps": [
+        "RedGood",
+        "RedOldWindow",
+        "RedProducts",
+        "RedScale"
+      ],
+      "group": "local"
+    },
+    "RedSampling": {
+      "deps": [
+        "LabelDensity"
+      ],
+      "group": "local"
+    },
+    "RedScale": {
+      "deps": [
+        "BlueProducts",
+        "OldSparseMass"
+      ],
+      "group": "local"
+    },
+    "RedWindow": {
+      "deps": [
+        "OldSupport",
+        "RedArithmetic",
+        "RedSampling"
+      ],
+      "group": "local"
+    },
+    "Remainder": {
+      "deps": [
+        "AbelCells"
+      ],
+      "group": "local"
+    },
+    "RoughCounts": {
+      "deps": [
+        "Bounds",
+        "SegmentMass"
+      ],
+      "group": "local"
+    },
+    "Sampling": {
+      "deps": [
+        "StableTransfer"
+      ],
+      "group": "local"
+    },
+    "SegmentMass": {
+      "deps": [
+        "PrimeNumberTheoremAnd.IEANTN.Mertens",
+        "SmoothMass"
+      ],
+      "group": "local"
+    },
+    "Selection": {
+      "deps": [
+        "Law"
+      ],
+      "group": "local"
+    },
+    "Shift": {
+      "deps": [
+        "Selection",
+        "Transfer"
+      ],
+      "group": "local"
+    },
+    "SieveError": {
+      "deps": [
+        "SmoothSieve"
+      ],
+      "group": "local"
+    },
+    "Simplices": {
+      "deps": [
+        "LabelSum"
+      ],
+      "group": "local"
+    },
+    "SmoothCount": {
+      "deps": [
+        "RoughCounts",
+        "SplitSieve"
+      ],
+      "group": "local"
+    },
+    "SmoothMass": {
+      "deps": [
+        "Arithmetic"
+      ],
+      "group": "local"
+    },
+    "SmoothSieve": {
+      "deps": [
+        "Arithmetic"
+      ],
+      "group": "local"
+    },
+    "SmoothTail": {
+      "deps": [
+        "Rankin",
+        "SmoothMass"
+      ],
+      "group": "local"
+    },
+    "SparseStrip": {
+      "deps": [
+        "StableTransfer"
+      ],
+      "group": "local"
+    },
+    "SplitSieve": {
+      "deps": [
+        "SieveError"
+      ],
+      "group": "local"
+    },
+    "Stability": {
+      "deps": [
+        "KernelEstimate",
+        "Plancherel"
+      ],
+      "group": "local"
+    },
+    "StableTransfer": {
+      "deps": [
+        "EulerTransfer",
+        "Shift"
+      ],
+      "group": "local"
+    },
+    "StrippedProfiles": {
+      "deps": [
+        "OldStrip",
+        "SparseStrip"
+      ],
+      "group": "local"
+    },
+    "ThetaInput": {
+      "deps": [],
+      "group": "local"
+    },
+    "Transfer": {
+      "deps": [
+        "Bounds",
+        "Law"
+      ],
+      "group": "local"
+    },
+    "TransferEndpoint": {
+      "deps": [
+        "Sampling",
+        "Stability"
+      ],
+      "group": "local"
+    },
+    "TransplantColors": {
+      "deps": [
+        "PrimeLabelMass",
+        "SegmentMass"
+      ],
+      "group": "local"
+    },
+    "UniformError": {
+      "deps": [
+        "SmoothCount"
+      ],
+      "group": "local"
+    },
+    "UniformLimit": {
+      "deps": [
+        "UniformError"
+      ],
+      "group": "local"
+    },
+    "Weak": {
+      "deps": [
+        "Weighted"
+      ],
+      "group": "local"
+    },
+    "Weighted": {
+      "deps": [
+        "Dilation"
+      ],
+      "group": "local"
+    },
+    "Weights": {
+      "deps": [
+        "Cofactor"
+      ],
+      "group": "local"
+    },
+    "WordIntegral": {
+      "deps": [
+        "FamilyAtoms",
+        "WordLaw"
+      ],
+      "group": "local"
+    },
+    "WordLaw": {
+      "deps": [
+        "AtomicProduct",
+        "LabelSum"
+      ],
+      "group": "local"
+    }
+  },
+  "sha256": {
+    "README.md": "eb6f1d8e3c926ea4b023990ea3de058cab11bf4bbb81f64d17f13741c5128e83",
+    "licenses/LeanArchitect.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/PrimeNumberTheoremAnd.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "original-axiom-audit.txt": "b8222b81bc7a20d0b4783862863dad654f36846af4499aa31f81bb5e858c88fa",
+    "replay.py": "2bf571385fabc91dbf151ecfd5845efa205a4b52730d4aedaea1953d96fd9dc4",
+    "src/AbelCells.lean": "eeb48400d49017644484b290a290746c06a4f232de6deb3338075cef8f3f7f5f",
+    "src/Architect.lean": "68748939e82259728644095b343599593f38abe65c971c14f910445a44f4ecf6",
+    "src/Architect/Attribute.lean": "1bce2337ed4de0e6e735819e89b4d35ad81c7e996e6cade79e8a9ef781dba314",
+    "src/Architect/Basic.lean": "92ed89acca564cdfb0cb696a3c2e3b62a7ccca82cb6fca85d0f994ffd2b2cb60",
+    "src/Architect/CollectUsed.lean": "921633f79fef58cf0d8540477785c4d9213608642685c21733dd3c61855d154d",
+    "src/Architect/Command.lean": "8497d574c12414908829e8b25a96e0ce52c643bd48da66b678d1623db395696a",
+    "src/Architect/Content.lean": "73de49bb499fc140dce470251e3f657368b788dca1659317e902f476ebb9556b",
+    "src/Architect/Load.lean": "6ae5e51b0f041d4cba8da31e0d8ff96ffa8ae89bf6dc33d84d7c0349dc92bd34",
+    "src/Architect/Output.lean": "ef52349573a02ff0714638fb47dfaf335c8c8a8c8b98192d3fc4d190ef4923d3",
+    "src/Architect/Tactic.lean": "cd152524b774c063cb382171e00c3b7913c5757063f560b10f9009e79f37f08d",
+    "src/Arithmetic.lean": "ae645d5372f4c973bd0e2e1ada5c241f4703a0001f3aaf1de218690783fe827f",
+    "src/ArithmeticSimplex.lean": "6f1a9cbb3b06e7c4b15926e7389e190ef9ae1b4fdec82ed2544355be90fbeaf9",
+    "src/Assembly.lean": "af86a29a1a94849e30a6279ee9907858622792cc62d17db6a660e1c7fba71a5e",
+    "src/AtomicProduct.lean": "33cd7c6f99cbc0a6d5a18cac169a750d627a363cbf5de9b4a12f0f0946997818",
+    "src/BlueBins.lean": "be230224170199a7b8967ff936344ae33172ad4f989ab822624c8716020ef662",
+    "src/BlueKernel.lean": "2e070d728b56b5c9cec4727ced76781e9930d21b7854bfa51113b17607e2b317",
+    "src/BlueMoving.lean": "bea617076bfdb383ba6eb817b0a6c1b92313ea2db856c3cf5334934b123b3dc1",
+    "src/BlueProducts.lean": "5160560a15a4ae18fbc54a0ac925dfb030def08320205abb8e549f4b0347234c",
+    "src/BlueRecovery.lean": "376cfede4e0ec68ce00ae5f60e9406c47c5342e378546b0c582adb40ebea49b5",
+    "src/BlueScale.lean": "299279d6b84f577338d0cb5e138536e06d207ed870d84cc06528b9292328361b",
+    "src/BlueStable.lean": "2ba70420ca9b07285e62cf2c0f0fb1b3cadecbf1ce535bce57dd9308f8ee2fe1",
+    "src/BlueStrips.lean": "3b8613f588950d3e65e0cc4e607dbe386604927c366bffd90238adb8a5659feb",
+    "src/Bounds.lean": "7f7a2ae52a863da2029b63179c840dd9970613d52b4a4428ce4bb98ec9583e0a",
+    "src/BumpKernel.lean": "a5c4cd100ebaad1c3d88744c5d550457f5f8c548223d4e74aa3208225956a9c5",
+    "src/CDFLimit.lean": "7f3786641b750324aee7267e2b28b7b769400f9672c19a87db63522eabdadea4",
+    "src/CellLaw.lean": "d62b3b61fe5e711adbb7bec389b4799164e517858907ced0752bcf0b563703a8",
+    "src/CellSpectrum.lean": "297019365b74b10ceeda7c2359abc292e584e28b2a12851851c86fc5824c5ed8",
+    "src/CellTuple.lean": "0528193c4632f3e2fdac378b090fe01a3e219cbd69fa4368ee757741ba432473",
+    "src/Cells.lean": "45868fed5547d5db3b2bc5c91af7d6688dd99f329707d22c2c77052f7d3208d8",
+    "src/Cofactor.lean": "339f6d128d7a5a889bd4e037f63357963dbc4a32ef9598e14e914676b95ef008",
+    "src/CompactCDF.lean": "20dd074e74f57be4fae066cf36bef450bbbbc0d3424f8c63de14f27be1f99679",
+    "src/Components.lean": "46fb33b032f722f0d2f9c1de23f0873fb900c2f24b96d9e13f6b66ddb7b72b88",
+    "src/CountedWords.lean": "4ae8a74ff5d625061804cdeecc2052a49e18d26fbe71b79cc388e718c18b369b",
+    "src/Counting.lean": "84f05108d59f377933f81377c18012c3cbdd21261791b72a8f55e84bf6cc45ca",
+    "src/Cutoff.lean": "92bd47727b50f094cbcb837827bd0ec9bd2a4070bd3b211951fb9fdf22060b57",
+    "src/Dilation.lean": "bee2e5efb1e7b116bbdcc20137f1ca9e729efb893660db0157ebf303d85a100d",
+    "src/DisplacementTail.lean": "92fad1c137367dbcabda264668d6995eec0e61df12d0398e059b74257790a748",
+    "src/Enumerate.lean": "6320a7e56c299ff8d71a4f3d9d1019fd5ecec61acf0ac2f4375fb99012804eb2",
+    "src/Envelope.lean": "d1b4e25a8c3b1aed364a973d93ebc96a0eb156a18fe9f762d9fa39e784431e86",
+    "src/Erdos490Limit.lean": "ef8ae7d294aa56973701e34c22886af51662842c49b5136f37a31a691212a0f9",
+    "src/EulerScale.lean": "71fb756eb9437a5c9531062d6ccddd8d0039e62cd83a72cf8934b1fd57efe049",
+    "src/EulerTransfer.lean": "3da73654f869ace255019df92f8d2d9209a21d3a15b509939c30cb965d6925a1",
+    "src/FamilyAtoms.lean": "bc42bf9726a8b09ecb5de222e3dbe38c9cee128b171b54ce355d251250a7ff56",
+    "src/FinalTransfer.lean": "2a4d72ae746525e3cc75ecef93c95794be5ae3c1865d2d3b12ae9a80d3915ae0",
+    "src/FiniteOptimum.lean": "36fa731cdad1f658f6a47c35f4cc7863a34ac1c366561d3d47dbf05eb0650997",
+    "src/Fluctuations.lean": "cbe29da06339e4602ca060709d14d21546510f89abd9925d464521bfc8701b5d",
+    "src/Fourier.lean": "df2336b949caac9c23ef6827a6c50815369c0301745f0e3a3c232a68aa0a8281",
+    "src/GradeSum.lean": "b56ea3028d8c9cf921ef20897a53933c45238d78d7a204361b4088f07e010175",
+    "src/Grid.lean": "0e31924ecee194da1722aacd89afe580b1d107e9dd9859211326867f2182f77b",
+    "src/H1.lean": "b4b1f09f226edee3957f34dfa925e06243113b5b713c1de8bdb69f7600a0c169",
+    "src/H2.lean": "cd9f8431f1260f6ae5862d6663d4c1f7e06ecc06e6cbc80e3931a8d6db2eb87f",
+    "src/H3.lean": "76a17b5be7911f80da6959e5f0fe2b4db8d944cc42a66ca330063e7d7b5f8666",
+    "src/Harmonic.lean": "8cb2bc1d1fe38ae437cc496cd653e883d64ba890811a6cdd6c91762851929caf",
+    "src/KernelEstimate.lean": "c91dca307dc1c07a8f6971aefb5cbafe32d296af63c574c2a4a9fc4a2efd6b55",
+    "src/KernelLimit.lean": "2b382dfe7f16caa7197e8f60a97bfea82e75d028b4696174c276cec1657ac8c1",
+    "src/KernelRange.lean": "3e5b537eaa6d0337e9ae97b5f8c8ee27b6e67b3327dcd0df2e1306fd42b7d30c",
+    "src/LabelDensity.lean": "d204528d65da17c9ba50743e4954647e41c1a177af84955198be85c03bb053a3",
+    "src/LabelEmbedding.lean": "4d813a792a849186bbd748b414d713abf768aea8c60c17fe41f2e4bacbf4a0f9",
+    "src/LabelSum.lean": "a0a8740d0843368e1983fca2fa906381ed86d7229a595d409b58450a458566ad",
+    "src/LargeLabelTransfer.lean": "1d6288d1d49ad8cd1f1ac6b9013a638ee4d286de90d7ec99ebeebf950efaebb9",
+    "src/LastLabel.lean": "607165a17f3f0e9dab753849fb01944cd6f0c4ed7c73c6043d0e926658f68f3b",
+    "src/Law.lean": "3c98ac1d468053725c6b938265d7c751afc7b82ce7e67250586ed175e0ebc6d2",
+    "src/LogWindow.lean": "1c6d60d79289add622397ee5deb9937ca5969ccc4c10bb9bd56c23cb92909007",
+    "src/Matching.lean": "a7ff71dfa429396e39aea21df3c6135bde9237e2645dea21e327bb9a96c712a6",
+    "src/Measures.lean": "6e2ce49046439adb32c30a75e0cb2f6ca0dd61e7ffc6ddf68e8464cdfbc60e42",
+    "src/MertensBounds.lean": "30c2eb703c208dad3b7926cc26dda1eeaad185ca31a2b2303f2a6994539acdc3",
+    "src/MovingLabel.lean": "061419de89f0ef2fc25cd3df8904f26a91bc32a22eee9a2dcd89b26abb601b7b",
+    "src/OMAReductions/R_Erdos490_erdos_490_variants_limit_R1.lean": "480457494a69d7d994b311104b74d952f2e4f6926675b9e908232c01c6dbe383",
+    "src/OldBadEstimate.lean": "bac5496715024f91e71ee0cc628a2478342bb89316f005eeec0654034eb192bd",
+    "src/OldBadMass.lean": "5228a21aad882d065a181a16d22c059bc9b351d5736bb224d52573799309d763",
+    "src/OldSparseMass.lean": "09011bab5f11d78ed014db7a7d82c84629073a229aac69a40f1456402b761a82",
+    "src/OldStableMass.lean": "7dc0b7991d97c2420150717f52f2c7b955424b614ad8d54a4511c9a7c9942d3c",
+    "src/OldStrip.lean": "dea4c63d9b11b52636afbee4b390612c7f9504f7617928e53384a15555cd6857",
+    "src/OldSupport.lean": "42dedb4c00b15c8e8627bdb222172b105f5f3bce7f933c8500bd9ab12ec850c1",
+    "src/OldTransport.lean": "1f9b54e6b601ad0acdfd5833172e2133a6ec9dbd097278c4fc39bd23b33b2049",
+    "src/OldWindow.lean": "cfca62b74fe1733a26172ddc965a0dda743a74256e2ae112c6d6cd76a9c63c7d",
+    "src/Plancherel.lean": "878429e3c22b862e6b766721fe4520749fccfd0fe8dc37c10b0b58ae92524403",
+    "src/PrimeCells.lean": "05c6c4320ac85fbef207b99c363d9187d765241a1b162160f810a582b73dcb0f",
+    "src/PrimeColorTransfer.lean": "73eb783da08dc23fe2ef064930893ed2227429965aba49e8b2fa31289fcffb04",
+    "src/PrimeInput.lean": "584c87b7a27edbcfcdf19fb813b1dd3cbd25d5495aa68c5cae1f08d64cd0f249",
+    "src/PrimeLabelMass.lean": "a0f5c234a2b3b2e3f62360a0fbaaffe6296445a095ba2454869d4874088e7447",
+    "src/PrimeNumberTheoremAnd/Auxiliary.lean": "6a57cc112e9a6dbe780c019cb22fa1469733afc78976f3aeeaaa80949acf0cfc",
+    "src/PrimeNumberTheoremAnd/EulerMaclaurin.lean": "a1def4a9f8f0b36864c5d480db137c1d86be3db1a47b67ae151e587a99167146",
+    "src/PrimeNumberTheoremAnd/Fourier.lean": "acddc3ebe3def62a3f0242d83ea5423dcbfdf26f540412adeeffea3c8212cdbe",
+    "src/PrimeNumberTheoremAnd/IEANTN/Mertens.lean": "6f71a221604463ba1479872012cfb12b885a9e6a8f8abb87a08b4c12c4dca60b",
+    "src/PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.lean": "e688bf925c2130b291c536d3b93b72c20e41ae95d530c90915921d75a6f52504",
+    "src/PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean": "7e3e2b8f84e6c170051a6474272455bed2432e6fddac5660072318b9b4eda7ec",
+    "src/PrimeNumberTheoremAnd/MediumPNT.lean": "1e143729f444f6664d76ca5fc5556f1eaeae01400d80b20322a28820b9dbe713",
+    "src/PrimeNumberTheoremAnd/MellinCalculus.lean": "f89856dcbb9fca164188d64d992858456687f26ca3160a565bcb82fbc08916d2",
+    "src/PrimeNumberTheoremAnd/Rectangle.lean": "ab1c0c7c16ad9f3765e439fe42a739d4d25f09aa991df6c4c303f77380a89885",
+    "src/PrimeNumberTheoremAnd/ResidueCalcOnRectangles.lean": "6a8ab0005546490f91b615f6bfbe8818ba21f3afe008a893174ab1a0e3e45cb8",
+    "src/PrimeNumberTheoremAnd/SmoothExistence.lean": "e689045a2d7f92c71c68fda6aa69a89d4a8692187475ba432ed010f453110ea0",
+    "src/PrimeNumberTheoremAnd/Sobolev.lean": "fe06e13fad5b47dbd324307ba246110515c4cb50f4c41d6cb15764fd53b1b8ef",
+    "src/PrimeNumberTheoremAnd/StrongPNT.lean": "ecab040a6fc06662d684249badf337952753f403261303e0a1038437b84c0719",
+    "src/PrimeNumberTheoremAnd/Tactic/AdditiveCombination.lean": "ea898bb0a4889d82fe4b94b7052daa73083d1f3aa3cddb5336f0513580a17040",
+    "src/PrimeNumberTheoremAnd/ZetaBounds.lean": "5cf9bcbc85029d5ef23a41eda28827c9fcc68af62e47b199a46d54981b20d6e1",
+    "src/PrimeNumberTheoremAnd/ZetaConj.lean": "08a9153c6500464c574f466a5569e82adbd5fb152a96a914fbb77c3208d0a71c",
+    "src/ProductLaw.lean": "5e8957ce457028efbb6cbdf87f4512db532e83f0c42af17a86b55115f33478e7",
+    "src/Rankin.lean": "36cebe3dd625c760aea81fdf2cb496fe8f89a7394e0a50eef7d9dd77bc31c13f",
+    "src/Reciprocal.lean": "6c3c8d2ac9d1979b6b658799f9ba5cb5a5bd22a858117e903a31fe6ff4e54bab",
+    "src/RedArithmetic.lean": "fed7c0b0f19d7a6460c95294bb23d3fc97c2038a3c1ca63e8627adbfc23ecb05",
+    "src/RedGood.lean": "654389ec2c513e4a7439e013274f5812b244aea43f5dbf0cac4274657b19a470",
+    "src/RedOldWindow.lean": "5430df821ede0b01fb25538dd191b9ac8d5e7666dfee11befb3472b02284e181",
+    "src/RedProducts.lean": "fcbf6bc0d38608201786a76916185b8461c48feec283aa8c9d6412b7558eb7df",
+    "src/RedRealization.lean": "c851326bc7e8007840d0af25b9358ab4f5c8b18ce374b64a989461720cd16b42",
+    "src/RedSampling.lean": "a912ca7aa436fe7057137681da22c33761f038fde14b46e003430724b5ad720d",
+    "src/RedScale.lean": "1df0e7493a5a43a502b9b2aea89d87d6c7ffad930d18c8131fa55be18db51e16",
+    "src/RedWindow.lean": "0452c0c15ec54ff23ea2ce7fbe4fa502ad4aeea01d31ad115c1352eb51653371",
+    "src/Remainder.lean": "e93f54071130fc718511039e1ce0fe67604baa2cc640fe7bf4b2d6e499399160",
+    "src/RoughCounts.lean": "b39dd7c94685028ec1b80d5f283c5c66d817e184d8d731571f444f45c9f42a16",
+    "src/Sampling.lean": "5dc2506a339a90d8902d53bbd7071699b962f3797eede3272d851ea3fbf02233",
+    "src/SegmentMass.lean": "10ede9d3d5a3c7023c1294a486c9c7f67269c3e80ba1bb4ab1491f1a3030d408",
+    "src/Selection.lean": "c17833913cc7f827089f5ae023ac57584c46173b7cafc26aa971774985c71211",
+    "src/Shift.lean": "1c514c774bdb14f15bc118d063d65be65c937fde186bdd288b066244b1ef0bbb",
+    "src/SieveError.lean": "3395b2e62cb4eff9f772fbe614cf80d0f64d897364c16cf3d3f3ae8760075a48",
+    "src/Simplices.lean": "862e8f073e3903bbede771c83596eebe67021acf76b4018d79b5180e3a281b26",
+    "src/SmoothCount.lean": "7b4fb25e6f4d872b3ff7fa48930ebe57f2cb394fd53a15067eb892e2852b6408",
+    "src/SmoothMass.lean": "5eb6b01bca158f74691e3f6d2fc9406ff2e6030ed918cb3aedfc3a632a395782",
+    "src/SmoothSieve.lean": "75dbffdb34c914d5700626bfb5268bcc33c5be504d7d81d7f0450d29d95c82d5",
+    "src/SmoothTail.lean": "0b544e5f21607520f258b3f3dac1d12e4654090bf07d810fbcafafc5dd7892aa",
+    "src/SparseStrip.lean": "5414d8a7d3f284c3eb476f690d54b1fefe4a4915983a0561337be9a7f7ae45a5",
+    "src/SplitSieve.lean": "9353ddcb3203f64d570260766bd7b1d5572dbdc7575a7c09860cefefdb40038d",
+    "src/Stability.lean": "783577bf6fa261f1eed72d1cb705391e4cdc8ade90879cb9d59110662343c6c7",
+    "src/StableTransfer.lean": "3315350633b6d9493daa8a9e5d5db7f384d24c25a62f9edc3e19051f7acbcae9",
+    "src/StrippedProfiles.lean": "f92743340e37ed5a54bc3cefd16739a1e55fc6a0c1c3ab84e14bc317f78bb78e",
+    "src/ThetaInput.lean": "620a2d91cfbc0a10fd613266b4fd1284b486b7f47aa88914719f5fdc387e22c7",
+    "src/Transfer.lean": "4be6f4c785c231564d50ae2aef07c49e682cc88648db94f0c3a52929d19f69cd",
+    "src/TransferEndpoint.lean": "1612c7c63d32cc92d18e7b699889a419c2cc15847077d52280edefe9e5e9ee07",
+    "src/TransplantColors.lean": "e623892c4e87378796234557624eac9db83e122b24d6e95bba6e8a0b13f25396",
+    "src/UniformError.lean": "c0e000e0808fb5651739dd16f58d563d581b7abe425880bc166cd627d5122efa",
+    "src/UniformLimit.lean": "fd43bb633e3bc65df5eecc38c997c15e078d94d6d7cd33a007ae2ecf859d4a6b",
+    "src/Weak.lean": "cb7c7d84f554d5d25908858db650ff7ac27346297def58ba438ffd1cdb097c5d",
+    "src/Weighted.lean": "2075886879998d590f08caf730e6cd2cc9c6ce2952b8d632d39736ed5fad6483",
+    "src/Weights.lean": "b189f7d45c2f3b3028a0344381fbbe56d7619c1fa3c25e8e065a31dc1e724091",
+    "src/WordIntegral.lean": "b358d81442d087cb03d7b134f5e6b474fc90ad93e2f57b5a16d888683e89bfdb",
+    "src/WordLaw.lean": "099f065d10b38668b8191db95a2f9fed8a0210d649650fda68707597ee303c5f"
+  }
+}
