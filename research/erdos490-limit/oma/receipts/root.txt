@@ -1,0 +1,7 @@
+reductions/Erdos490.erdos_490.variants.limit.R1.H2.R2.lean
+85091 bytes
+SHA-256 06e87d49d8453d04b7248b150a06b2b4069e464109603c92cb129d1d61727744
+Official lint ok
+Lean 4.33.1 -DwarningAsError=true
+'OMA.R_Erdos490_erdos_490_variants_limit_R1_H2_R2.main' depends on axioms: [propext, Classical.choice, Quot.sound]
+leanchecker -v OMAReductions.R_Erdos490_erdos_490_variants_limit_R1_H2_R2: passed

@@ -1,0 +1,10 @@
+reductions\Erdos490.erdos_490.variants.limit.R1.lean: official lint passed; declaration OMA.R_Erdos490_erdos_490_variants_limit_R1.main; source 480457494a69d7d994b311104b74d952f2e4f6926675b9e908232c01c6dbe383
+replaying OMAReductions.R_Erdos490_erdos_490_variants_limit_R1; exit 0
+'OMA.R_Erdos490_erdos_490_variants_limit_R1.main' depends on axioms: [propext, Classical.choice, Quot.sound]
+proofs\Erdos490.erdos_490.variants.limit.R1.H1.lean: official lint passed; declaration OMA.solution; source 0d0f47a94ab97b3f6f34e15f322b38a490183a180163e5a84fae7c2bfdcddc35
+replaying StepH1; exit 0
+'OMA.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+proofs\Erdos490.erdos_490.variants.limit.R1.H3.lean: official lint passed; declaration OMA.solution; source d47e19061d92b0ef9e7d9ed25c980632bff1c92b53dfadd3bd423c364820cd25
+replaying StepH3; exit 0
+'OMA.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying Hierarchy; exit 0

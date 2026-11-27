@@ -1,0 +1,12 @@
+Lean 4.33.1 Windows x86_64, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6
+formal-conjectures 9097e2f90e66d2f6244209cb1c07f7120d17ec53
+Mathlib 0df444a360eaa60ab8c11dca51a86af692955474
+Open Math Agents lint 9b0666fab640c28cc1a97dc3439ea547f4f7a972
+
+SHA-256 of the exact inputs used to check the reduction and package the analytic proofs
+
+480457494a69d7d994b311104b74d952f2e4f6926675b9e908232c01c6dbe383  parent R1 source
+50beabeb01e10f9639cd7f89e74eac563978773f483b30fb8df9f5022a9c14c4  parent R1 audit .olean
+b1fc963527912672ce3b1a1a61dc4a0e901affb08dd2570927fad43fcad18569  analytic-packaging/zeta-port/ZetaRegion.lean
+78f8549dcae5aeb3007d31692e9ff72ffd37a898991a79e5310076984b5c50f5  analytic-packaging/mellin-port/EffectivePntMellin.lean
+

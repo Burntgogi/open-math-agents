@@ -1,0 +1,7 @@
+proofs/Erdos490.erdos_490.variants.limit.R1.H2.R2.H3.lean
+390404 bytes
+SHA-256 f9488aedaf42c28fb59a44fb5f97109676bcfe7a63a0ada082c9149a9bae65c9
+Official lint ok
+Lean 4.33.1 -DwarningAsError=true
+'OMA.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+leanchecker -v PublicRecovery: passed

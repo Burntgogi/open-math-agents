@@ -1,0 +1,37 @@
+[
+  {
+    "path": "reductions/Erdos490.erdos_490.variants.limit.R1.lean",
+    "sha256": "480457494a69d7d994b311104b74d952f2e4f6926675b9e908232c01c6dbe383",
+    "bytes": 7836
+  },
+  {
+    "path": "proofs/Erdos490.erdos_490.variants.limit.R1.H1.lean",
+    "sha256": "0d0f47a94ab97b3f6f34e15f322b38a490183a180163e5a84fae7c2bfdcddc35",
+    "bytes": 43362
+  },
+  {
+    "path": "proofs/Erdos490.erdos_490.variants.limit.R1.H3.lean",
+    "sha256": "d47e19061d92b0ef9e7d9ed25c980632bff1c92b53dfadd3bd423c364820cd25",
+    "bytes": 9547
+  },
+  {
+    "path": "reductions/Erdos490.erdos_490.variants.limit.R1.H2.R2.lean",
+    "sha256": "06e87d49d8453d04b7248b150a06b2b4069e464109603c92cb129d1d61727744",
+    "bytes": 85091
+  },
+  {
+    "path": "proofs/Erdos490.erdos_490.variants.limit.R1.H2.R2.H1.lean",
+    "sha256": "4bfd39d28b50cbfb6098968a1646d233b39692d23e5f1889acbbf55e2146ab28",
+    "bytes": 428469
+  },
+  {
+    "path": "proofs/Erdos490.erdos_490.variants.limit.R1.H2.R2.H2.lean",
+    "sha256": "cdfc9f2ad233d5f54af851688c9dd781c213caa6d05cc687102ef96d6300e101",
+    "bytes": 116365
+  },
+  {
+    "path": "proofs/Erdos490.erdos_490.variants.limit.R1.H2.R2.H3.lean",
+    "sha256": "f9488aedaf42c28fb59a44fb5f97109676bcfe7a63a0ada082c9149a9bae65c9",
+    "bytes": 390404
+  }
+]
