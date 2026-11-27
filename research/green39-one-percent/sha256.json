@@ -1,0 +1,15 @@
+{
+  "one-percent-formal/iid/IIDAdapter.lean": "bff9fefb64133c0c1850c4c32568571ac48060d60e3419eecc30a6218fad7292",
+  "one-percent-formal/outside/OutsideRestriction.lean": "171202c0cb720a04342f1a515180126bbcaf8979ba9a714791551f2774ab83c3",
+  "one-percent-verification/check.py": "9cce421e264d832d58d00b5cfd67e6f809a7c550b54326c75c36039c81c0c342",
+  "one-percent-verification/Constants.lean": "426595015758e6725985b3357fc05fe400ab2a91a276df2898531947ddfa2c00",
+  "one-percent-verification/Endpoint.lean": "93928fdd0346edd4ba2e4957a77555c275c39460a3da00308468d671a5e91c48",
+  "one-percent-verification/Review.md": "e9a17bce33a3933908e05f784517526046ee787257c04d00d4e7ced6088721a8",
+  "overnight-astra/fixed-gap.md": "290c426b2995f558722818e7c8e09afeaddec511925df1c4ad9ac69468ed45b8",
+  "overnight-astra/hubs.ko.md": "8404256af9c3087bef3497ad97b933db4757c90d3a0ac6d1015ff2004caf4ab9",
+  "overnight-astra/report.ko.md": "fc5c60b0ba084ea3fc40490bdffd1c695bbb7f1e7e0750cbbe610d129ac9e5c7",
+  "overnight-astra/review/audit.md": "9a511cfc5644d6f29fbb1353a0b92542ea746e02f7f05df6eb85396c21e4e3d3",
+  "overnight-astra/review/check_review.py": "a0fbe0758c0771a79855885d17a38a4070d45c4084fe7ed1d8117068ed208af1",
+  "overnight-astra/review/one-percent.md": "650d267c953f4a92168dcad0a17535c1f1e20a90653cbfc99f43f07a02ced4a7",
+  "overnight-astra/verify.py": "c3f9783823cdc5ef14f7670a26a841679f3756955ccb6d3e5046e2fcbf6a90f9"
+}
