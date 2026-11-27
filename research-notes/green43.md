@@ -1,0 +1,9 @@
+# Green 43 partial results
+
+Partial bounds for the linear variant. Let U be the union for an arbitrary choice of residues in the specified prime band. Uniformly in all choices, |U| >= (1-o(1))*N^0.98. For independent uniformly random residues the expected size is (1/52+o(1))*N. A universal linear lower constant, if it exists, is at most 1/52. We have neither proved its positivity nor constructed an o(N) example.
+
+For a reproducible lower-bound argument, take the smallest floor(N^0.495) primes in the band as D. The ordinary prime number theorem gives p = (1+o(1))*N^0.51 uniformly on D: for every fixed epsilon > 0 the interval up to (1+epsilon)*N^0.51 eventually contains more than |D| primes. Distinct classes meet in at most one point since pq > N. Double counting and Cauchy-Schwarz give S^2 <= |U|*(S+|D|^2), with S = sum over D of floor(N/p). This finite inequality has been checked in Lean for arbitrary admissible prime subfamilies and arbitrary residues. Substitution gives the asserted leading coefficient 1. At N = 100000, the exact minimum is 1829. For primes 359, 367, 373, 379, 383, 389, 397 use residues 0, 178, 37, 326, 42, 40, 365. All 21 pairwise intersections are distinct, attaining the Bonferroni lower bound 1850-21.
+
+A separate Fourier estimate constrains any potential counterexample. If m_D counts the chosen classes at each point and mu_D = sum(1/p), the Fourier transform of (m_D-mu_D)*1_[1,N] is O(z log N) uniformly in the frequency and every prime subfamily D below z in the band. Splitting near zero and near rational frequencies is essential; at a resonance with prime denominator one exceptional prime must be handled separately. Each of U+U and U-U consequently misses only O(N^0.68*(log N)^(4/3)) of its 2N-1 possible integer values. These distribution bounds are pen-and-paper results and leave the linear lower bound for U unresolved.
+
+[Catalogue problem](https://lefttosolve.com/p/Green43.green_43.variants.range_N051_N052_linear)
